@@ -35,11 +35,24 @@
     <Folder Include="input\singlepath\" />
     <Folder Include="input\multipath\" />
     <Folder Include="input\join\" />
+    <Folder Include="output\" />
+    <Folder Include="output\singlepath\" />
+    <Folder Include="output\multipath\" />
+    <Folder Include="output\optional\" />
+    <Folder Include="output\stream\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="input\singlepath\AsClass.cs" />
     <Compile Include="input\singlepath\AsFunction.cs" />
     <Compile Include="input\multipath\AsClass.cs" />
     <Compile Include="input\join\AsFunction.cs" />
+    <Compile Include="output\singlepath\AsFunction.cs" />
+    <Compile Include="output\singlepath\AsClass.cs" />
+    <Compile Include="output\multipath\AsClass.cs" />
+    <Compile Include="output\multipath\AsFunction.cs" />
+    <Compile Include="output\optional\AsFunction.cs" />
+    <Compile Include="output\optional\AsClass.cs" />
+    <Compile Include="output\stream\AsClass.cs" />
+    <Compile Include="output\stream\AsFunction.cs" />
   </ItemGroup>
 </Project>
