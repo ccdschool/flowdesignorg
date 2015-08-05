@@ -54,5 +54,6 @@
     <Compile Include="output\optional\AsClass.cs" />
     <Compile Include="output\stream\AsClass.cs" />
     <Compile Include="output\stream\AsFunction.cs" />
+    <Compile Include="input\join\AsClass.cs" />
   </ItemGroup>
 </Project>
