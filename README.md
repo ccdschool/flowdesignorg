@@ -1,2 +1,2 @@
 # flow-design.org
-Code samples for flow-design.org
+Code samples and images for flow-design.org
