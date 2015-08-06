@@ -42,7 +42,6 @@
     <Folder Include="output\stream\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="input\singlepath\AsClass.cs" />
     <Compile Include="input\singlepath\AsFunction.cs" />
     <Compile Include="input\multipath\AsClass.cs" />
     <Compile Include="input\join\AsFunction.cs" />

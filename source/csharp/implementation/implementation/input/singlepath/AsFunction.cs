@@ -7,6 +7,10 @@ namespace implementation
 		public void F(int x) {
 			// ...
 		}
+
+		public static void F(int x) {
+			// ...
+		}
 	}
 }
 
