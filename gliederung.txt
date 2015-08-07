@@ -1,0 +1,130 @@
+slider images für die vorteile
+
+* Lightweight - Software design made simple  http://flow-design.org/lightweight-design // feder
+* Clean - Code that's easy to read and change http://flow-design.org/clean-code // seife, schaum?
+* Fluent - Software production without friction http://flow-design.org/fluent-production // gewässer, fließend
+* Systematic - Software evolution guided by principles http://flow-design.org/systematic-approach // bauklötze
+* Organized - Productively working together http://flow-design.org/organized-work // bienen
+
+seiten für slider, die näher erklären
+
+-----
+
+homepage boxes für die top level überschriften
+
+seiten für boxes, die näher erklären
+
+# Overview // Auge
+
+# Design // Geodreieck oder so
+
+## Incremental Requirements Decomposition (IRD)
+### Overview
+from requirements down to logic
+### System Context
+### (Bounded Context)
+### Application
+### (Partition)
+### Dialog
+### Interaction
+### Feature
+* as bullet points (with simple I/O)
+* test cases
+
+## Data Flow Design (DFD)
+### Functional Units
+* Input
+* Output
+### Simple Data Flows (1D)
+* PoMO
+### Hierarchical Data Flows (3D)
+* IOSP
+### Branching Data Flows (2D)
+#### Split
+* Explicit
+* Implicit
+#### Join
+* Manual Reset Join
+* Auto Reset Join
+### Dependencies
+#### Local State
+#### Shared State
+#### Resources
+### Messages
+#### Value vs Type
+#### Structured Data Types
+#### Lists
+#### Streams
+#### Optional
+### Concurrency
+### Exceptions
+
+## Module Design
+### Function
+### Class
+### Library
+### Component
+### Service
+
+## Host Design
+### Actor
+### Process
+### Machine
+### Site
+
+## IODA Architecture
+
+# Implementation // Hammer
+## Input
+* Single Path
+* Multi-Path
+* Join
+## Output
+* Single Path
+* Multi-Path
+* Optional
+* Stream
+## Integration
+* Simple data flows (1D)
+* Hierarchical data flows (3D)
+* Branching data flows (2D)
+## Dependencies
+* Instantiation vs Injection
+* Resource
+* State
+## Iteration
+## Recursion
+## Concurrency
+* Threads
+  * Synchronization
+* Actors
+  * Synchronization
+## Exceptions
+
+
+# Production // Zahnräder
+## Release Flow
+increments as a means to an end
+## Theory of Constraints
+## The Process
+### Stages
+* Analysis
+* Design
+* Implementation
+* QA
+* Reviews
+* Acceptance
+* Release
+* Retrospective
+### Roles
+* Pull
+accept, release
+* Crunch
+dev, test
+* Push
+story dev, support, sales, management
+## Tuning
+* WIP Limitation
+lanes: express, feature, research
+* Work Distribution
+feature dev vs feature team
