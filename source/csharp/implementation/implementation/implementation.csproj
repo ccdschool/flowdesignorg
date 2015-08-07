@@ -56,5 +56,7 @@
     <Compile Include="output\stream\WithContinuation.cs" />
     <Compile Include="output\singlepath\WithContinuation.cs" />
     <Compile Include="integration\SimpleDataFlow.cs" />
+    <Compile Include="integration\HierarchicalWithContinuations.cs" />
+    <Compile Include="integration\HierarchicalWithEvents.cs" />
   </ItemGroup>
 </Project>

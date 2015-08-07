@@ -4,7 +4,7 @@ namespace implementation
 {
 	public class MyClass
 	{
-		public int H(int x) {
+		public int H(string x) {
 			var y = F(x);
 			var z = G(y);
 			return z;
