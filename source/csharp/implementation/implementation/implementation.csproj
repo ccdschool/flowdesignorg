@@ -53,5 +53,6 @@
     <Compile Include="output\optional\WithEvent.cs" />
     <Compile Include="output\stream\WithEvent.cs" />
     <Compile Include="output\stream\WithContinuation.cs" />
+    <Compile Include="output\singlepath\WithContinuation.cs" />
   </ItemGroup>
 </Project>
