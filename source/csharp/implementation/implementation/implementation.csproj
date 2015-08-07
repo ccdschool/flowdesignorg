@@ -40,6 +40,7 @@
     <Folder Include="output\multipath\" />
     <Folder Include="output\optional\" />
     <Folder Include="output\stream\" />
+    <Folder Include="integration\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="input\singlepath\AsFunction.cs" />
@@ -54,5 +55,6 @@
     <Compile Include="output\stream\WithEvent.cs" />
     <Compile Include="output\stream\WithContinuation.cs" />
     <Compile Include="output\singlepath\WithContinuation.cs" />
+    <Compile Include="integration\SimpleDataFlow.cs" />
   </ItemGroup>
 </Project>
