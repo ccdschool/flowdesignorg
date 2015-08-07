@@ -45,13 +45,13 @@
     <Compile Include="input\singlepath\AsFunction.cs" />
     <Compile Include="input\multipath\AsClass.cs" />
     <Compile Include="input\join\AsFunction.cs" />
-    <Compile Include="output\singlepath\AsFunction.cs" />
-    <Compile Include="output\singlepath\AsClass.cs" />
-    <Compile Include="output\multipath\AsClass.cs" />
-    <Compile Include="output\multipath\AsFunction.cs" />
-    <Compile Include="output\optional\AsFunction.cs" />
-    <Compile Include="output\optional\AsClass.cs" />
-    <Compile Include="output\stream\AsClass.cs" />
-    <Compile Include="output\stream\AsFunction.cs" />
+    <Compile Include="output\singlepath\WithEvent.cs" />
+    <Compile Include="output\singlepath\WithReturn.cs" />
+    <Compile Include="output\multipath\WithContinuation.cs" />
+    <Compile Include="output\multipath\WithEvent.cs" />
+    <Compile Include="output\optional\WithContinuation.cs" />
+    <Compile Include="output\optional\WithEvent.cs" />
+    <Compile Include="output\stream\WithEvent.cs" />
+    <Compile Include="output\stream\WithContinuation.cs" />
   </ItemGroup>
 </Project>

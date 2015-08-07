@@ -2,9 +2,9 @@
 
 namespace implementation
 {
-	public class F
+	public class MyClass
 	{
-		public void Process() {
+		public void F() {
 			// ...
 			Result("my result...");
 		}
