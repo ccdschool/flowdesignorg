@@ -58,5 +58,6 @@
     <Compile Include="integration\SimpleDataFlow.cs" />
     <Compile Include="integration\HierarchicalWithContinuations.cs" />
     <Compile Include="integration\HierarchicalWithEvents.cs" />
+    <Compile Include="integration\BranchingDataFlow.cs" />
   </ItemGroup>
 </Project>
