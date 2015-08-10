@@ -1,3 +1,27 @@
+magee theme bereiche für homepage:
+
+slider (nur bilder, keine texte darauf, keine links)
+
+	* Lightweight - Software design made simple  http://flow-design.org/lightweight-design // feder
+	* Clean - Code that's easy to read and change http://flow-design.org/clean-code // seife, schaum?
+	* Fluent - Software production without friction http://flow-design.org/fluent-production // gewässer, fließend
+
+service shortcode (mit font awesome icon, text, link)
+	horizontal anordnen innerhalb von column shortcodes
+
+	* Cross-cutting (cubes, clone, )
+	* Lightweight (sitemap)
+	* Systematic (group)
+	* Clean (code)
+
+slogan (text mit button)
+	geht einmal quer über die seite
+
+	* Overview
+
+
+-----
+
 sitemap:
 
 
