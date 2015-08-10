@@ -42,6 +42,7 @@
     <Folder Include="output\stream\" />
     <Folder Include="integration\" />
     <Folder Include="iteration\" />
+    <Folder Include="dependencies\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="input\singlepath\AsFunction.cs" />
@@ -61,5 +62,7 @@
     <Compile Include="integration\HierarchicalWithEvents.cs" />
     <Compile Include="integration\BranchingDataFlow.cs" />
     <Compile Include="iteration\Iteration.cs" />
+    <Compile Include="dependencies\OneClass.cs" />
+    <Compile Include="dependencies\MultipleClasses.cs" />
   </ItemGroup>
 </Project>
