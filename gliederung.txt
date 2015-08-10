@@ -1,3 +1,27 @@
+sitemap:
+
+
+who we are
+why flow design?
+imprint
+
+lightweight design
+clean code
+(fluent production)
+systematic approach
+organized work
+
+overview
+	incremental req decomposition
+	data flow design
+	implementation
+	fluent production
+
+
+
+
+-----
+
 slider images für die vorteile
 
 * Lightweight - Software design made simple  http://flow-design.org/lightweight-design // feder
