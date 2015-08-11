@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace implementation
+namespace implementation.output.singlepath
 {
-	public class MyClass
+	public class MyImplClass
 	{
 		public int F() {
 			// ...

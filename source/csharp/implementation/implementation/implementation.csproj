@@ -66,5 +66,6 @@
     <Compile Include="dependencies\MultipleClasses.cs" />
     <Compile Include="dependencies\StateInSameClass.cs" />
     <Compile Include="dependencies\InternalState.cs" />
+    <Compile Include="Program.cs" />
   </ItemGroup>
 </Project>

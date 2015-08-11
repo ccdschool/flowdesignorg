@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace implementation
+namespace implementation.output.multipath
 {
 	public class MyClass
 	{

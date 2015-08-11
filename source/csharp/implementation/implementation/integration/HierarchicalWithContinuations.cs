@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace implementation
+namespace implementation.integration
 {
-	public class MyClass
+	public class MyImplClass
 	{
 		public void H(string x, Action<int> continueWith) {
 			F(x, y => G(y, continueWith));

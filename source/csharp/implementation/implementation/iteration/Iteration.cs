@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace implementation
+namespace implementation.iteration
 {
 	public class MyClass
 	{

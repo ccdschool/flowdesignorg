@@ -16,7 +16,7 @@ namespace implementation
 		}
 
 		public int B(int p) {
-			return q * 2;
+			return p * 2;
 		}
 
 		public int C(int q) {

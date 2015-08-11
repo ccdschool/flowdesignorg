@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace implementation
+namespace implementation.integration
 {
 	public class MyClass
 	{

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace implementation
+namespace implementation.dependencies
 {
 	public class MyClass
 	{
@@ -28,7 +28,7 @@ namespace implementation
 	public class B
 	{
 		public int Process(int p) {
-			return q * 2;
+			return p * 2;
 		}
 	}
 

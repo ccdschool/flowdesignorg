@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace implementation
+namespace implementation.output.singlepath
 {
-	public class MyClass
+	public class MyClassForF
 	{
-		public void F(Action<int> Result) {
+		public void F(Action<int> onResult) {
 			// ...
-			Result(42);
+			onResult(42);
 		}
 	}
 }
