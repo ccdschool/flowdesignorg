@@ -64,5 +64,7 @@
     <Compile Include="iteration\Iteration.cs" />
     <Compile Include="dependencies\OneClass.cs" />
     <Compile Include="dependencies\MultipleClasses.cs" />
+    <Compile Include="dependencies\StateInSameClass.cs" />
+    <Compile Include="dependencies\InternalState.cs" />
   </ItemGroup>
 </Project>
