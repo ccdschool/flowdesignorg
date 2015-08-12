@@ -6,7 +6,7 @@ namespace logic
 	{
 		public static void Main (string[] args)
 		{
-			var name = args [0];
+			var name = args.Length < 1 ? "" : args [0];
 			var greeting = Greetings.Greet (name);
 			Console.WriteLine (greeting);
 		}
@@ -14,7 +14,10 @@ namespace logic
 
 	class Greetings {
 		public static string Greet(string name) {
-			return "Hello, " + name + "!";
+			if (string.IsNullOrEmpty(name))
+				return "Sorry, what was your name?";
+			else
+				return "Hello, " + name + "!";
 		}
 	}
 }
