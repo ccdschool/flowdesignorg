@@ -20,6 +20,21 @@ slogan (text mit button)
 	* Overview
 
 
+------
+
+von der homepage unter den spalten:
+
+[slogan btn_text='Analysis' btn_link='http://flow-design.org/incremental-requirements-decomposition' ]Fluent software development starts with a requirements analysis which is not oblivious to the needs of developers. Learn how to slice requirements in a manner to make solution design and getting feedback easy.[/slogan]
+
+[slogan btn_text='Design' btn_link='http://flow-design.org/data-flow-design' ]Non-trivial requirements cannot be translated into code right away. A conceptual solution has to be carefully devised before that. Learn how to describe solutions in a declarative way before coding.[/slogan]
+
+[slogan btn_text='Coding' btn_link='http://flow-design.org/implementation' ]Flow Design strives to make coding simpler. Learn about the guidelines for transforming designs into code which is easy to read and enhance.[/slogan]
+
+[slogan btn_text='Production' btn_link='http://flow-design.org/fluent-production' ]Software development is as much about a production process as it is about design and code. Certain activities have to be identified, staffed, and coordinated. Learn about how to organize the software development work for quick feedback and high performance.[/slogan]
+
+
+
+
 -----
 
 sitemap:
