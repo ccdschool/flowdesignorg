@@ -14,10 +14,10 @@ namespace logic
 			// https://en.wikipedia.org/wiki/Palindrome
 			text = text.Replace (" ", "");
 			var txet = string.Join ("", text.ToCharArray ().Reverse ());
-			var isPalindrom = StringComparer.CurrentCultureIgnoreCase.Compare (text, txet) == 0;
+			var isPalindrome = StringComparer.CurrentCultureIgnoreCase.Compare (text, txet) == 0;
 
 			// output result
-			Console.WriteLine ("'{0}' {1}", text, isPalindrom ? "is a palindrome" : "is not a palindrome");
+			Console.WriteLine ("'{0}' {1}", text, isPalindrome ? "is a palindrome" : "is not a palindrome");
 		}
 	}
 }
