@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{12D68607-37AA-42A7-A525-FED46EBF1698}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>component.app</RootNamespace>
+    <AssemblyName>component.app</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+    <Commandlineparameters>desserts</Commandlineparameters>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\component.client\component.client.csproj">
+      <Project>{44B4C022-CEBA-443C-9F47-E1F3AAEBDF64}</Project>
+      <Name>component.client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\component.contract\component.contract.csproj">
+      <Project>{4AC63B0B-364C-48AE-B6C0-DE5D448C6950}</Project>
+      <Name>component.contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\component.implementation\component.implementation.csproj">
+      <Project>{E4E7DE36-32D7-43B9-A909-1DC38F788B7B}</Project>
+      <Name>component.implementation</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
