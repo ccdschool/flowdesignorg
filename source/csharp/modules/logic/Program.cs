@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace function
+namespace logic
 {
 	class MainClass
 	{
