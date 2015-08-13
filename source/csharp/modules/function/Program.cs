@@ -7,9 +7,11 @@ namespace function
 	{
 		public static void Main (string[] args)
 		{
-			// check if a list of strings forms a palindrome
-			// https://en.wikipedia.org/wiki/Palindrome
+			// build string to check
 			var text = string.Join ("", args);
+
+			// check if string is a palindrome
+			// https://en.wikipedia.org/wiki/Palindrome
 			text = text.Replace (" ", "");
 			var txet = string.Join ("", text.ToCharArray ().Reverse ());
 			var isPalindrom = StringComparer.CurrentCultureIgnoreCase.Compare (text, txet) == 0;
