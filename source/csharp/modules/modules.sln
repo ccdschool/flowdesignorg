@@ -23,12 +23,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "component.contract", "compo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "component.implementation", "component.implementation\component.implementation.csproj", "{E4E7DE36-32D7-43B9-A909-1DC38F788B7B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mservice", "mservice", "{024DBC4D-0A5C-4D10-88BB-2903F49E50E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mservice.contract", "mservice.contract\mservice.contract.csproj", "{45466E1D-0DAF-4707-B005-3DED79219780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mservice.client", "mservice.client\mservice.client.csproj", "{10BFB09A-E6A8-454C-8BD5-8575D373F88E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10BFB09A-E6A8-454C-8BD5-8575D373F88E}.Debug|x86.ActiveCfg = Debug|x86
+		{10BFB09A-E6A8-454C-8BD5-8575D373F88E}.Debug|x86.Build.0 = Debug|x86
+		{10BFB09A-E6A8-454C-8BD5-8575D373F88E}.Release|x86.ActiveCfg = Release|x86
+		{10BFB09A-E6A8-454C-8BD5-8575D373F88E}.Release|x86.Build.0 = Release|x86
 		{12D68607-37AA-42A7-A525-FED46EBF1698}.Debug|x86.ActiveCfg = Debug|x86
 		{12D68607-37AA-42A7-A525-FED46EBF1698}.Debug|x86.Build.0 = Debug|x86
 		{12D68607-37AA-42A7-A525-FED46EBF1698}.Release|x86.ActiveCfg = Release|x86
@@ -45,6 +55,10 @@ Global
 		{44B4C022-CEBA-443C-9F47-E1F3AAEBDF64}.Debug|x86.Build.0 = Debug|Any CPU
 		{44B4C022-CEBA-443C-9F47-E1F3AAEBDF64}.Release|x86.ActiveCfg = Release|Any CPU
 		{44B4C022-CEBA-443C-9F47-E1F3AAEBDF64}.Release|x86.Build.0 = Release|Any CPU
+		{45466E1D-0DAF-4707-B005-3DED79219780}.Debug|x86.ActiveCfg = Debug|x86
+		{45466E1D-0DAF-4707-B005-3DED79219780}.Debug|x86.Build.0 = Debug|x86
+		{45466E1D-0DAF-4707-B005-3DED79219780}.Release|x86.ActiveCfg = Release|x86
+		{45466E1D-0DAF-4707-B005-3DED79219780}.Release|x86.Build.0 = Release|x86
 		{4AC63B0B-364C-48AE-B6C0-DE5D448C6950}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{4AC63B0B-364C-48AE-B6C0-DE5D448C6950}.Debug|x86.Build.0 = Debug|Any CPU
 		{4AC63B0B-364C-48AE-B6C0-DE5D448C6950}.Release|x86.ActiveCfg = Release|Any CPU
@@ -73,5 +87,7 @@ Global
 		{44B4C022-CEBA-443C-9F47-E1F3AAEBDF64} = {42DF0B5B-E0B1-4BB6-8003-2466D6BD7657}
 		{4AC63B0B-364C-48AE-B6C0-DE5D448C6950} = {42DF0B5B-E0B1-4BB6-8003-2466D6BD7657}
 		{E4E7DE36-32D7-43B9-A909-1DC38F788B7B} = {42DF0B5B-E0B1-4BB6-8003-2466D6BD7657}
+		{45466E1D-0DAF-4707-B005-3DED79219780} = {024DBC4D-0A5C-4D10-88BB-2903F49E50E3}
+		{10BFB09A-E6A8-454C-8BD5-8575D373F88E} = {024DBC4D-0A5C-4D10-88BB-2903F49E50E3}
 	EndGlobalSection
 EndGlobal
