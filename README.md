@@ -9,7 +9,7 @@ In all diesen Ansätzen steckt Wahrheit und Nützlichkeit - nur leider fehlt aus
 
 Flow-Design erfindet dafür nicht viel Neues, interpretiert aber Existierendes durchaus anders als gewohnt und setzt es frisch in Beziehung.
 
-Das klingt immer noch geheimnisvoll für dich? Klar :-) Deshalb genug der einleitenden Worte. Hier gehts für den Einstieg zum [Überblick](de/readme.md) über die wesentlichen Aspekte der Methode...
+Das klingt immer noch geheimnisvoll für dich? Klar :-) Deshalb genug der einleitenden Worte. Hier gehts für den Einstieg zum [Überblick](de/README.md) über die wesentlichen Aspekte der Methode...
 
 Viel Freude beim Stöbern wünschen dir
 
