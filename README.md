@@ -16,3 +16,5 @@ Viel Freude beim Stöbern wünschen dir
 [Stefan Lieser](http://lieser-online.de) und [Ralf Westphal](http://ralfw.de)
 
 Clean Code Developer School - [ccd-school.de](http://ccd-school.de)
+
+![](resources/images/logo_ccd_school.jpeg)
