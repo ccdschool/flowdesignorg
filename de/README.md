@@ -1,5 +1,5 @@
 # Überblick
-Flow-Design soll die Softwareproduktion flüssig und nachhaltig machen. Das fasst aus unserer Sicht den Zweck gut zusammen, aber es klingt zumindest wohl für dich ungewöhnlich.
+Flow-Design soll die Softwareproduktion flüssig und nachhaltig machen. Das fasst aus unserer Sicht den Zweck gut zusammen, aber es klingt für dich vielleicht ungewöhnlich.
 
 Lass uns deshalb die Bestandteile des Satzes kurz näher anschauen:
 
@@ -11,9 +11,9 @@ Da haben wir uns etwas vorgenommen, oder? Und du wirst dich fragen, wie Flow-Des
 
 Genau genommen ist Flow-Design aber natürlich nur eine Hypothese. Die kann widerlegt oder bestätigt werden. Immer wieder. Das führt dann zu einer Veränderung von Flow-Design. Unser Ansatz ist also stets _work in progress_. Wenn du uns also Feedback gibst - durch Fragen oder Beobachtungen -, dann hilft uns das sehr, Flow-Design weiterzuentwickeln.
 
-Nach so viel Zweck und Theorie, nun zur Praxis. Dich interessiert nun bestimmt noch mehr, _wie_ wir das hehre Ziel erreichen wollen.
+Nach so viel Zweck und Theorie, nun zur Praxis. Dich interessiert bestimmt, _wie_ wir das hehre Ziel erreichen wollen.
 
 Dafür gibt es zwei Einstiegspunkte:
 
-* Du kannst dir anschauen, wie Flow-Design Programmierung versteht, d.h. was wir von Themen wie Softwarearchitektur oder TDD halten. Das ist die technische Seite von Flow-Design. Willkommen Softwareentwickler! Hier gehts zur [Requirements-Logic-Gap](requirements-logic-gap/README.md)...
-* Oder dich interessiert mehr der Prozess, in dem die Programmierung unserer Ansicht nach ablaufen sollte. Hier geht es eher um die Berühungspunkte mit der mainstream Agilität. Das ist die untechnische Seite von Flow-Design. Willkommen Projektleiter und Product Owners! Hier gehts zum [Spinning](spinning/README.md)...
+* Du kannst dir anschauen, wie Flow-Design Programmierung versteht, d.h. was wir von Themen wie Softwarearchitektur oder TDD halten. Das ist die technische Seite von Flow-Design. **Willkommen Softwareentwickler!** Hier gehts zur [Requirements-Logic-Gap](requirements-logic-gap/README.md)...
+* Oder dich interessiert mehr der Prozess, in dem die Programmierung unserer Ansicht nach ablaufen sollte. Hier geht es eher um die Berühungspunkte mit der mainstream Agilität. Das ist die untechnische Seite von Flow-Design. **Willkommen Projektleiter und Product Owners!** Hier gehts zum [Spinning](spinning/README.md)...
