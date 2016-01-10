@@ -121,3 +121,16 @@ Deshalb raten wir ab vom Versuch eines Sprungs. Die Lücke zwischen Anforderunge
 Willst du wissen, welche Schritte wir für notwendig halten? Es sind drei. Die sind zunächst auch nicht wirklich neu. Aber wenn du mit uns genau hinschaust, dann wirst du sehen, die haben es in sich.
 
 Bereit? [Dann los...](schritte.md)
+
+## Und was ist mit Objektorientierung?
+Jetzt haben wir immerzu von Logik gesprochen. Da fragst du dich bestimmt, was mit der ehrwürdigen Objektorientierung ist. Geht es nicht beim Programmieren darum, Klassen zu definieren, um in denen Funktionen und Daten zusammenzufassen?
+
+Funktionen, Klassen und Objekte haben ihren Platz. Keine Sorge, die wollen wir nicht aus dem Boot kippen. Allerdings haben sie für uns einen anderen Stellenwert. Sie stehen nicht am Anfang unserer Überlegungen, sondern kommen später hinzu. Du wirst schon sehen.
+
+An dieser Stelle als knappe Begründung:
+
+Anforderungen an Funktionalität oder Effizienz sind noch nie besser erfüllt worden durch Funktionen, Klassen oder Objekte. Funktionen, Klassen und Objekte sind einfach keine programmiersprachlichen Mittel, um Verhalten herzustellen. Das geschieht ausschließlich mittels [Logik](logik.md).
+
+Deshalb tauchen Funktionen, Klassen, Objekte bisher nicht auf dem Weg ausgehend von den Anforderungen auf. Die Zeit ist immer knapp. Wir müssen uns konzentrieren bei der Softwareentwicklung. Es gilt, das Ziel scharf ins Auge zu fassen. Und das lautet: Verhalten.
+
+Du bist immer noch verwirrt? Dann versuche, dieses Gefühl einen Moment einfach mal zu ignorieren. Gib uns noch einen Moment und schau dir an, [wie wir uns vorstellen, die Lücke zu schließen.](schritte.md)
