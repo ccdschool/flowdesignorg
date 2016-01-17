@@ -3,16 +3,16 @@ Die [Requirements-Logic-Gap](README.md) ist groß und weit. Unterschätze sie ni
 
 Wie kannst du dir es aber einfacher machen? Wie könnten Trittsteine platziert sein, um dir den Weg von den Anforderungen zur [Logik](logik.md) leichter zu machen. Kleine und große Schritte sind ok, einen Spagat oder gar ein Sprung solltest du vermeiden.
 
-Zunächst standen wir auch nur vor dieser Lücke und waren ratlos. Zwar hatten wir sie unzählige Male überwunden... doch uns war nicht wirklich, wirklich klar, wie wir das geschafft hatten. Es war mehr Durchwurschteln als präzise Arbeit entlang eines klaren Weges, mehr Auto Scooter als Zugfahrt.
+Zunächst standen wir auch nur vor dieser Lücke und waren ratlos. Zwar hatten wir sie unzählige Male überwunden... doch uns war nicht wirklich, wirklich klar, wie wir das geschafft hatten. Es war mehr Durchwurschteln als präzise Arbeit entlang eines klaren Weges, mehr Autoscooter als Zugfahrt.
 
-Dabei war zumindest der grobe Weg schon jahrzehntelang ausgeschildert. Er besteht aus drei Abschnitten: Analyse, Entwurf und Implementation.
+Dabei war zumindest der grobe Weg schon jahrzehntelang ausgeschildert. Er besteht und bestand immer schon aus drei Abschnitten: Analyse, Entwurf und Implementation.
 
 ![](../../resources/images/requirements-logic-gap/gapphases.png)
 
 Das ist nicht neu für dich, oder? Wir kannten diese Abschnitte auch. Im Grunde kann sie sogar niemand umgehen. Aber man kann sich ihrer auf dem Weg zur Logik mehr oder weniger bewusst sein. Man kann sie mit _trial and error_ durchstolpern oder systematisch durchschreiten.
 
 * Alles beginnt mit der Problemanalyse. Am Anfang steht das Verstehen. Wer die Aufgabe nicht versteht, kann keine Lösung entwickeln. Das sollte auf der Hand liegen. Und irgendwie bemüht sich jeder Entwickler auch darum.
-* Wenn man das Problem verstanden hat, dann kann man sich überlegen, die eine Lösung _aussehen_ sollte. Man macht sich einen Plan der Lösung, aber baut sie noch nicht. Das ist ein Schritt, über den viel diskutiert wird (Stichworte Architektur, Entwurf), der jedoch vielen Entwickler sehr schwer fällt. Hier ist die Unsicherheit nach unserer Beobachtung sehr groß. Immer wieder wird gesprungen, denn geschritten.
+* Wenn man das Problem verstanden hat, dann kann man sich überlegen, wie eine Lösung _aussehen_ sollte. Man macht sich einen Plan der Lösung, aber baut sie noch nicht. Das ist ein Schritt, über den diskutiert wird (Stichworte Architektur, Entwurf), der jedoch vielen Entwickler sehr schwer fällt. Hier ist die Unsicherheit nach unserer Beobachtung groß. Immer wieder wird gesprungen, denn geschritten.
 * Schließlich setzt man den Plan um in Code. Das ist der Schritt, den die meisten Entwickler am liebsten tun. Oder wie geht es dir? Hier kommen Programmiersprachen und andere Technologien endlich zum Einsatz. Das ist 'was für echte Programmierer. Darüber kann man sich in der Community die Köpfe heiß reden.
 
 So weit, so einfach. Vielleicht fühlst du dich ertappt, diese Abschnitte im Programmieralltag nicht deutlich von einander zu trennen. Doch irgendwie kanntest du sie schon.
@@ -29,7 +29,7 @@ Der Gesamtprozess der Softwareentwicklung transformiert Anforderungen in Logik. 
 ### Die Entwurf:Implementation-Schnittstelle
 Fangen wir von unten/hinten an. Die Implementation ist dir bestimmt am vertrautesten. Wie könnte der Input aussehen, um die Implementation möglichst einfach zu machen?
 
-Die Implementation setzt natürlich Anforderungen um. Es muss also ein gewisser Scope an gewünschter Funktionalität bzw. Effizienz anliegen, für den [Logik](logik.md) zu finden ist. Der [Lösungsentwurf](entwurf.md) liefert ja nicht die Logik selbst, sondern nur einen Rahmen, in den nun die Implementation Logik gießen soll.
+Auch die Implementation setzt natürlich Anforderungen um. Es muss also ein gewisser Scope an gewünschter Funktionalität bzw. Effizienz anliegen, für den [Logik](logik.md) zu finden ist. Der [Lösungsentwurf](entwurf.md) liefert ja nicht die Logik selbst, sondern nur einen Rahmen, in den nun die Implementation Logik gießen soll.
 
 Wie du im [Experiment](README.md) selbst bemerkt hast, ist es schon für einen kleinen Scope nicht ganz leicht, die Logik zu bestimmen. Das bedeutet: Der [Entwurf](entwurf.md) muss der Implementation Scope in sehr kleinen Happen zur Transformation in Logik liefern.
 
@@ -43,7 +43,7 @@ Und wie liefert der Entwurf diese Scope-Happen ab? In Form von Funktionssignatur
 
 Ja, der Output des Lösungsentwurfs ist eine Menge von Funktionsdefinitionen. Und zwar Funktionen mit sehr, sehr überschauberer Verantwortlichkeit.
 
-Die Implementation ist dann für die exakte programmiersprachliche Umsetzung der Funktionsdefinitionen zuständig. Nur die Implementation codiert! Bei ihr geht es wirklich um die Feinheiten, syntaktische wie technologische.
+Die [Implementation](implementation.md) ist dann für die exakte programmiersprachliche Umsetzung der Funktionsdefinitionen zuständig. Nur die Implementation codiert! Bei ihr geht es wirklich um die Feinheiten, syntaktische wie technologische.
 
 Der [Entwurf](entwurf.md) liefert insofern vor allem Bedeutungen. Denn das ist es, was Funktionen tun: sie geben Logik Bedeutung.
 
@@ -56,7 +56,7 @@ for(var i=1; i<=n; i++)
 		values.Add(i);
 ```
 
-Um das herauszufinden, musst du schon genau hinschauen. Du musst alle Anweisungen betrachten und im Kopf simulieren. Dann kommst du darauf, was in `values` gesammelt wird. Logik selbst ist nur der Ausdruck eines _Wie_. _Was_ das soll, sagt Logik selbst nicht as.
+Um das herauszufinden, musst du schon genau hinschauen. Du musst alle Anweisungen betrachten und im Kopf simulieren. Dann kommst du darauf, was in `values` gesammelt wird. Logik selbst ist nur der Ausdruck eines _Wie_. _Was_ das soll, sagt Logik selbst nicht aus.
 
 Würde die Logik hingegen in einer Funktion stehen, bräuchtest du sie nicht zu analysieren. Die Funktionssignatur würde dir sagen, worum es bei der Logik geht. Insbesondere der Funktionsname drückt das _Was_, den Zweck, die Verantwortlichkeit aus:
 
@@ -70,7 +70,7 @@ IEnumerable<int> Compile_even_numbers(int n) {
 }
 ```
 
-Jetzt kannst du die Logik im Grunde überspringen, wenn du auf die Funktion in einer Code-Datei stößt. Der Funktionsname sagt, _was_ passiert. Die Logik schaust du nur an, wenn du daran interessiert bist, _wie_ das Verhalten hergestellt wird.
+Jetzt kannst du die Logik im Grunde überspringen, wenn du auf die Funktion in einer Code-Datei stößt. Der Funktionsname sagt, _was_ passiert. Die Logik schaust du nur an, wenn du daran interessiert bist, _wie_ das Verhalten hergestellt wird. Ansonsten vertraust du, dass die Funktion ihren Job gut macht. Am besten ist das durch automatisierte Tests belegt.
 
 Das Ergebnis des Entwurfs ist also primär eine Liste von Signaturen wie `IEnumerable<int> Compile_even_numbers(int n)`. Dazu können dann gern auch noch Testfälle kommen, um genauer zu definieren, was die Leistung der Funktion sein soll.
 
@@ -80,9 +80,9 @@ Für dich als Programmierhandwerker ist dann sehr klar, was zu tun ist. Entweder
 
 Und was ist mit der Objektorientierung? Sollte ein Entwurf nicht auch Klassen definieren? Wo sind die?
 
-Auf dem Weg von den Anforderungen zur Logik sind Klassen zunächst zweitrangig. Klassen dienen nicht der Verhaltensherstellung! So einfach ist das. Deshalb tauchen sie bisher nicht auf. Wenn du mehr darüber erfahren willst, lies hier, [wie Flow-Design Klassen einordnet](module.md).
+Du hast Recht: Der Entwurf liefert mehr als nur Funktionen. Er liefert "Orte für Logik" in Form von [Modulen](module.md), dazu gehören auch Klassen. Doch auf dem Weg von den Anforderungen zur Logik sind andere Module außer Funktionen zweitrangig. Klassen dienen nicht direkt der Verhaltensherstellung! Deshalb tauchen sie bisher nicht auf. Wir behandeln das näher bei der genaueren Beschreibung des [Entwurfs](entwurf.md).
 
-Die Aufgabe von Analyse und Entwurf ist es, den Gesamtscope der funktionalen wie effizienzorientierten Anforderungen in immer kleinere Teile zu zerlegen, so dass am Ende überschaubare Funktionseinheiten stehen, deren Implementation für dich im Grunde ein no-brainer ist. Wenn zwischen den ursprünglichen Anforderungen und der Logik eine große Lücke, gar ein Graben liegt, dann trennt die Funktionsdefinition des Entwurfs und die Logik nur noch ein dünner Riss. Den kannst du vergleichsweise leicht schließen.
+Die Aufgabe von Analyse und Entwurf ist es, den Gesamtscope der funktionalen wie effizienzorientierten Anforderungen in immer kleinere Teile zu zerlegen, so dass am Ende überschaubare Funktionseinheiten stehen, deren Implementation für dich im Grunde ein no-brainer ist. Wenn zwischen den ursprünglichen Anforderungen und der Logik eine große Lücke, gar ein Graben liegt, dann soll die Funktionsdefinition des Entwurfs und die Logik nur noch ein dünner Riss trennen. Den kannst du vergleichsweise leicht schließen.
 
 ### Die Analyse:Entwurf-Schnittstelle
 Der Entwurf stellt Funktionsdefinitionen her. Wie er das unserer Meinung nach tun sollte, wollen wir an dieser Stelle noch nicht diskutieren. Wichtiger ist die Frage, woraus er sie herstellt. Was transformiert der Entwurf, was ist sein Input?
@@ -93,7 +93,7 @@ Es ist ganz einfach: Der Entwurf hat wie die Implementation als Ausgangsbasis Fu
 
 Der Scope der Funktionen, die der Entwurf transformiert, ist natürlich umfangreicher als der der Funktionen, mit denen die Implementation gefüttert wird. Doch die Form, wie der Scope dem Entwurf von der [Analyse](analyse.md) dargeboten wird, ist dieselbe: Signaturen. Signaturen und Testfälle.
 
-Denn auch hier gilt: Am Ende soll Logik hergestellt werden. Logik braucht Bedeutung. Funktionen stiften Bedeutung. Deshalb sind sie die Liefereinheiten der Phasen Analyse und auch Entwurf.
+Denn auch hier gilt: Am Ende soll Logik für Verhalten hergestellt werden. Logik braucht Bedeutung. Funktionen stiften Bedeutung. Deshalb sind sie die Liefereinheiten der Phasen Analyse und auch Entwurf.
 
 ![](../../resources/images/requirements-logic-gap/phaseinterfacefunctiongranularity.png)
 
@@ -103,9 +103,9 @@ Nein, ganz so soll es nicht sein. Keine Sorge, Product Owner müssen weiterhin k
 
 Wie soll das gehen mit Product Ownern? Das geht, weil Product Owner die Analyseergebnisse nicht allein herstellen, sondern in Zusammenarbeit mit Programmierern. Und das geht, weil Product Owner durch eine [Analysemethode](analyse.md) geleitet werden, die ihre Sprache spricht - und gleichzeitig die Sprache der Programmierer.
 
-Warum überhaupt Funktionen als Analyseergebnis? Weil Funktionen für Programmierer klar definierte Ausgangspunkte sind, um zu Logik zu kommen. Sobald eine Signatur und womöglich sogar Testfälle vorliegen, haben Programmierer etwas, an dem sie mit ihrem Hauptwerkzeug Programmiersprache ansetzen können. Signaturen sind konkret.
+Warum überhaupt Funktionen als Analyseergebnis? Weil Funktionen für Programmierer klar definierte Ausgangspunkte sind, um zu Logik zu kommen. Sobald eine Signatur und womöglich sogar Testfälle vorliegen, haben Programmierer etwas, an dem sie mit ihrem Hauptwerkzeug Programmiersprache ansetzen können. Signaturen sind konkret. Gegen sie lässt sich codieren oder vorher entwerfen.
 
-Anforderungen ohne Signatur oder zumindest einem Kontrakt, aus dem sich eine Signatur leicht ableiten lässt, sind demgegenüber schwammig. Die Softwareentwicklung kommt mit solchen Anforderungen leicht ins Schlingern. Sie muss dann erst wieder in die Analyse einsteigen. Und was soll dann das Ergebnis dieser Analyse sein?
+Anforderungen ohne Signatur oder zumindest einem Kontraktbeschreibung, aus dem sich eine Signatur leicht ableiten lässt, sind demgegenüber schwammig. Die Softwareentwicklung kommt mit solchen Anforderungen leicht ins Schlingern. Sie muss dann erst wieder in die Analyse einsteigen. Und was soll dann das Ergebnis dieser Analyse sein?
 
 Wenn wir nicht Funktionsdefinitionen als Ergebnis der Analyse festlegen, drehen wir uns im Kreis. Wir kommen nicht weiter in Richtung Logik.
 
@@ -118,7 +118,7 @@ Keine Sorge, beim Flow-Design kommen die Daten nicht zu kurz. Insbesondere im [E
 
 Warum sie beim Überqueren der Requirements-Logic-Gap kaum Erwähnung finden, wiederholen wir aber gern nochmal: Der Kunde interessiert sich für Verhalten. Der will Action sehen. Im Mittelpunkt steht also die Tat, das Verb, nicht die Struktur, nicht das Substantiv.
 
-Deshalb steht für uns das, was in einer Programmiersprache etwas tut, im Mittelpunkt. Auf unterster Ebene ist das die [Logik](logik.md).
+Deshalb sehen wir das, was in einer Programmiersprache etwas tut, im Mittelpunkt. Auf unterster Ebene ist das die [Logik](logik.md).
 
 Um Logik aber auch zur Entwicklungszeit schon eine Bedeutung zu geben, braucht es Funktionen. Fehlen die oder werden sie schlecht "geschnitten", muss Logik von dir immer wieder interpretiert, d.h. im Kopf simuliert werden, um zu verstehen. Das ist zeitaufwendig. Und das führt wiederum zum Entstehen vieler Kommentare, die die Abwesenheit von Funktionen kompensieren sollen – aber die Situation noch schlimmer machen. Denn Kommentare verrauschen Code und leisten Inkonsistenzen Vorschub.
 
@@ -127,13 +127,13 @@ Aber natürlich braucht Logik Daten. Sinn und Zweck von Logik ist die Transforma
 Deshalb hat Flow-Design natürlich eine Meinung zum Umgang mit Daten und zum Aufbau von Datenstrukturen. Nur steht die nicht gleichberechtigt im Vordergrund neben unserer Meinung zu Funktionen. Denn der Einstieg in die Entwicklung einer Software ist aus unserer Sicht viel, viel leichter und natürlicher, wenn du dich auf Aktivitäten bzw. Prozesse konzentrierst - und erst dann überlegst, womit diese Prozesse arbeiten.
 
 ## Durch den Fleischwolf
-Der ganze Weg durch die Requirements-Logic-Gap gleicht einem mehrstufigen Verarbeitungsprozess, bei dem Anforderungen durch den Fleischwolf gedreht werden:
+Lass uns nun das Ganze so zusammenfassen: Der Weg durch die Requirements-Logic-Gap gleicht einem mehrstufigen Verarbeitungsprozess, bei dem Anforderungen durch den Fleischwolf gedreht werden:
 
 ![image](../../resources/images/requirements-logic-gap/meatgrinder.png)
 
-Am Anfang sind sie noch sehr grob - selbst wenn sie als User Stories vorliegen -, dann nimmt sie die [Problemanalyse](analyse.md) in die Mangel. Sie schneidet sie feiner und feiner, bis am Ende einzelne Funktionen heraustropfen.
+Am Anfang sind sie noch sehr grob - selbst wenn sie als User Stories vorliegen -, dann nimmt sie die [Problemanalyse](analyse.md) in die Mangel. Sie schneidet sie feiner und feiner, bis am Ende einzelne Funktionen heraustropfen. Wir nennen das auch *Story Slicing*.
 
-Jetzt der [Lösungsentwurf](entwurf.md), der den Scope der Funktionen von der Analyse nochmal feiner hackt. Das Resultat sind wiederum Funktionen, nur eben mit weitaus begrenzterem Scope.
+Danach der [Lösungsentwurf](entwurf.md), der den Scope der Funktionen von der Analyse nochmal feiner hackt. Das Resultat sind wiederum Funktionen, nur eben mit weitaus begrenzterem Scope.
 
 Und schließlich die Implementation, die die Funktionen des Entwurfs nimmt und mit Logik füllt.
 
@@ -142,7 +142,9 @@ Fertig ist die Software mit Verhalten.
 Ist das ein plastisches Bild? Wir hoffen es.
 
 ## Agile Lückenüberwindung
-Du hast nun einen Überblick, wie Flow-Design den Programmierprozess differenziert betrachtet. Der besteht aus sequenziellen Phasen. Das finden wir natürlich und vermeidbar. Niemand kann implementieren, ohne vorher (!) die Anforderungen analysiert zu haben. Und was soll überhaupt implementiert werden? Anforderungen werden nicht implementiert. Lösungen werden implementiert. Damit das geschehen kann, müssen sie aber ebenfalls vor (!) der Implementation entwickelt worden sein.
+Du hast nun einen Überblick, wie Flow-Design den Programmierprozess differenziert betrachtet. Der besteht aus sequenziellen Phasen. Das finden wir natürlich und unvermeidbar.
+
+Niemand kann implementieren, ohne vorher (!) die Anforderungen analysiert zu haben. Und was soll überhaupt implementiert werden? Anforderungen werden nicht implementiert. Lösungen werden implementiert. Damit das geschehen kann, müssen sie aber ebenfalls vor (!) der Implementation entwickelt worden sein.
 
 Du siehst, es führt nichts an der Reihenfolge dieser drei Schritte vorbei:
 
@@ -158,9 +160,9 @@ Jetzt magst du denken, dass diese Schrittfolge sehr nach dem viel gescholtenen W
 
 Wir sehen in solchen sequenziellen Phasen jedoch keinen Widerspruch zum agilen iterativen Vorgehen. Auch Agilität hebt die Notwendigkeit eines Entwurfs vor der Implementation und einer Analyse vor dem Entwurf nicht auf.
 
-Was Agilität jedoch anders macht als der ominöse Wasserfall, das ist Erhöhung der Frequenz, mit der diese Phasen durchlaufen werden.
+Was Agilität jedoch anders macht als der ominöse Wasserfall, das ist eine Erhöhung der Frequenz, mit der diese Phasen durchlaufen werden.
 
-Beim Wasserfall soll das nur einmal geschehen: es wird nur einmal alles analysiert, dann ein Gesamtentwurf einmalig angefertigt und schließlich der ganze Entwurf einmal implementiert. Fertig ist die komplette Software.
+Beim Wasserfall soll das nur einmal geschehen: Es wird nur einmal alles analysiert, dann ein Gesamtentwurf einmalig angefertigt und schließlich der ganze Entwurf einmal implementiert. Fertig ist die komplette Software.
 
 Eine der zentralen Erkenntnisse der Agilität ist es, dass das eben nicht funktioniert. Dafür gibt es in den Anforderungen zu viele Unklarheiten, die sich nicht durch Nachdenken und Diskutieren ausräumen lassen. Erst der Umgang des Kunden/Anwenders mit laufender Software zeigt, was nicht korrekt angefordert oder analysiert oder entworfen oder implementiert wurde.
 
@@ -168,11 +170,11 @@ Das bedeutet, es muss häufiger, viel häufiger der Weg von den Anforderungen zu
 
 Das ist iterative Entwicklung.
 
-Doch wir wird innerhalb jeder Iteration gearbeitet? Genauso wie beim Wasserfall. Innerhalb einer Iteration werden Anforderungen analysiert, dann wird entworfen, am Ende wird implementiert.
+Doch wie wird innerhalb jeder Iteration gearbeitet? Genauso wie beim Wasserfall. Innerhalb einer Iteration werden Anforderungen analysiert, dann wird entworfen, am Ende wird implementiert.
 
-Unsere Beschreibung des Weges zur Überwindung der Requirements-Logic-Gap macht es nur ganz explizit, was dabei wie geschehen soll. In einem Vorgehensmodell wie Scrum ist das nicht erklärt. Scrum ist es sogar egal, wie Entwickler mit den beim Sprint Planning Meeting "übergebenen" Anforderungen in Form von User Stories verfahren. Hauptsache beim Sprint Review am Ende einer Iteration kann lauffähige Software ohne "Verhaltensauffälligkeiten" gezeigt werden.
+Unsere Beschreibung des Weges zur Überwindung der Requirements-Logic-Gap macht es nun ganz explizit, was dabei wie geschehen soll. In einem Vorgehensmodell wie Scrum ist das nicht erklärt. Scrum ist es sogar egal, wie Entwickler mit den beim Sprint Planning Meeting "übergebenen" Anforderungen in Form von User Stories verfahren. Hauptsache beim Sprint Review am Ende einer Iteration kann lauffähige Software ohne "Verhaltensauffälligkeiten" gezeigt werden.
 
-Trotz einer genauen Vorstellung von der Entwicklung von Logik aus Anforderungen ist Flow-Design also nicht wider die Agilität. Im Gegenteil! Wir stoßen immer wieder auf Belege, dass Agilität gar nicht ihr ganzes Versprechen einlösen kann, solange die Entwicklung nicht in ähnlicher Weise systematisch an User Stories herangeht.
+Trotz einer genauen Vorstellung von der Entwicklung von Logik aus Anforderungen ist Flow-Design also nicht wider die Agilität. Im Gegenteil! Wir stoßen immer wieder auf Belege, dass Agilität gar nicht ihr ganzes Versprechen einlösen kann, solange die Entwicklung nicht systematisch wie hier vorgestellt an User Stories herangeht.
 
 Natürlich haben wir diese Phasen nicht erfunden. Sie sind so alt wie die Softwareentwicklung. Nur ist das irgendwie in weiten Teilen der Softwareentwicklergemeinde vergessen worden. Man durchläuft sie nicht explizit; stattdessen ist Durchwurschteln.
 
@@ -180,8 +182,9 @@ Eines scheint Flow-Design jedoch eigen zu sein: Die Betonung von Funktionen als 
 
 Und auch wie wir meinen, dass du an Analyse und Entwurf herangehen solltest, scheint neu bzw. kein Thema für den Mainstream.
 
-Und nun kommst du: Wie willst du Flow-Design weiter erkunden?
+Aber nun kommst du: Wie willst du Flow-Design weiter erkunden?
 
 * Interessiert dich, wie wir den Weg sehen, um von Anforderungen zu Funktionsdefinitionen zu kommen, die dem Entwurf übergeben werden? Dann lies weiter bei der [Problemanalyse](analyse.md)...
-* Oder möchtest du erfahren, wie wir Softwareentwurf verstehen, wo doch die mainstream Objektorientierung dazu alles schon seit Jahrzehnten gesagt haben sollte? Dann lies weiter beim [Lösungsentwurf](entwurf.md)...
+* Oder möchtest du erfahren, wie wir Softwareentwurf verstehen, wo doch die mainstream Objektorientierung dazu alles schon seit Jahrzehnten gesagt haben soll? Dann lies weiter beim [Lösungsentwurf](entwurf.md)...
 * Vielleicht bist du aber auch der hands-on Typ, der nach so viel Theorie jetzt mal Code sehen will. Dann schau dir an, was wir zur [Implementation](implementation.md) der vom Entwurf gelieferten Funktionsdefinitionen zu sagen haben...
+* Schließlich könnte es aber auch sein, dass du erstmal sehen willst, wie wir den [Prozess](../spinning/README.md) verstehen, in dem die Lücke schrittweise immer wieder überwunden werden soll...
