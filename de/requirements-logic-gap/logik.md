@@ -7,7 +7,7 @@ Freunde der Funktionalen Programmierung mögen es nicht gern hören, aber es hil
 
 Seiteneffekte sind nicht zu vermeiden, Seiteneffekte sind sogar erwünscht. Ohne Seiteneffekte haben Anwender nichts davon, was immer Code sonst tun mag.
 
-Aber das bedeutet natürlich nicht, dass Seiteneffekte an beliebiger Stelle im Code entstehen sollten. Etwas Ordnung darf schon sein. Aber das ist ein anderes Thema.
+Aber das bedeutet natürlich nicht, dass Seiteneffekte an beliebiger Stelle im Code entstehen sollten. Etwas Ordnung darf schon sein. Aber das ist ein anderes Thema, ein Thema vor allem des [Entwurfs](entwurf.md).
 
 ## API-Aufrufe
 
@@ -57,20 +57,8 @@ Die Operation `+` transformiert ihren Input `name` (mit Wert `"Peter"`) und `"\n
 
 Wenn du spitzfindig bist, kannst du solche Operationen natürlich als Bibliotheksfunktionen verstehen und sie der Kategorie API-Zugriff zuschlagen. Aber wir glauben, dass es hilfreich ist, sie mehr als Bestandteil der Programmiersprache zu betrachten. Deshalb dafür eine eigene Kategorie.
 
-## Zuweisungen
-
-Variablen bzw. ihre Zuweisungen gehören ebenfalls zur Logik. Zwar kann Code ohne Variablen dasselbe Verhalten zeigen wie mit ihnen. Beispiel:
-
-```
-File.AppendAllText("gästeliste.txt", Console.ReadLine() + "\n")
-```
-
-Doch Variablen können zur Effizienzsteigerung eingesetzt werden. Sie ersparen dann die mehrfache Ausführung von Transformationen. Das wirkt sich auf das Softwareverhalten aus.
-
-Ansonsten dienen Variablen oft der Erhöhung der Lesbarkeit von Logik. Da das den Kunden jedoch nur sekundär interessiert, weil es nicht laufzeitverhaltensrelevant ist, sehen wir es nicht als Unterstützung ihrer Logikzugehörigkeit.
-
 ## Kontrollstrukturen
-Abgeschlossen wird die Liste der Logik-Kategorien durch Kontrollstrukturen. Anweisungen, die den Kontrollfluss steuern, verändern das Verhalten von Software.
+Auch Anweisungen, die den Kontrollfluss steuern, verändern das Verhalten von Software:
 
 ```
 if (b != 0)
@@ -85,6 +73,17 @@ Wir rechnen `throw` wie auch die auffangende Anweisungen `try-catch-finally` zu 
 
 Ganz allgemein gehören in diese Kategorie Fallunterscheidungen und Schleifen und Ausnahmebehandlung.
 
+## Zuweisungen
+Variablen bzw. ihre Zuweisungen gehören zur Logik, wenn sie verhaltensrelevant sind. Code ohne Variablen kann dasselbe Verhalten zeigen wie mit ihnen:
+
+```
+File.AppendAllText("gästeliste.txt", Console.ReadLine() + "\n")
+```
+
+Doch Variablen können zur Effizienzsteigerung eingesetzt werden. Sie ersparen dann die mehrfache Ausführung von Transformationen. Das wirkt sich auf das Softwareverhalten aus.
+
+Ansonsten dienen Variablen oft der Erhöhung der Lesbarkeit von Logik. Da das den Kunden jedoch nur sekundär interessiert, weil es nicht laufzeitverhaltensrelevant ist, sehen wir es nicht als Unterstützung ihrer Logikzugehörigkeit. Zuweisungen stehen deshalb am Ende der Liste dessen, was Logik ausmacht.
+
 ## Logik überall
 Begriffe wie Geschäftslogik (business logic) oder Domänenlogik (domain logic) oder Datenzugriffslogik (data access logic) oder Präsentationslogik (presentation logic) hast du bestimmt schon gehört. Sie tauchen in Architekturdiskussionen regelmäßig auf.
 
@@ -94,7 +93,9 @@ Aber halt! Warum dann "Logik" und nicht "Code"? Es könnte doch auch heißen "Do
 
 Erst als wir Logik als Untermenge von Code verstanden, machten die Begriffe wirklich Sinn. "Geschäftslogik" bezeichnet eben nur Logik im obigen Sinn. Es geht um die Logik, die "geschäftliches Verhalten" herstellt, also z.B. in einer Taschenrechnersoftware die mathematischen Operationen durchführt. Das werden vor allem Transformationen und Zuweisungen sein. Logik hingegen, die das Ergebnis anzeigt oder ein Protokoll in einer Datei führt, ist Präsentationslogik bzw. Datenzugriffslogik.
 
-Immer geht es nur um die für eine abgegrenzte Verantwortlichkeit relevanten API-Zugriffe, Transformationen, Zuweisungen und Kontrollstrukturen.
+Immer geht es nur um die für eine abgegrenzte Verantwortlichkeit relevanten API-Zugriffe, Transformationen, Kontrollstrukturen und performancesteigernde Zuweisungen.
+
+![](../../resources/images/requirements-logic-gap/logic.png)
 
 Logik ist also überall. Logik ist der Kern von Software. Alles andere in deinem Code ist... nein, nicht unnötiges Beiwerk, aber eben zumindest nicht für die Herstellung von Laufzeitverhalten zuständig.
 
