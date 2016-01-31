@@ -3,28 +3,29 @@
 
 Einen Entwurf der Lösung aus Kreisen und Pfeilen zu zeichnen ist nett. Doch du weist ja: Bubbles don't crash! Nach dem Entwurf der Lösung muss diese implementiert werden, in Code gegossen werden. Doch wie geht das? Wie werden die in den Flow Designs gezeichneten Konstrukte in konkreten Code übersetzt? Darum geht es in diesem Abschnitt. Wir zeigen dir hier, wie *Datenflüsse* übersetzt werden. Datenflüsse bestehen aus einem *Input* und einem *Output*. Jeder Input wird als *Funktion* übersetzt. Um genau zu sein: jede Pfeilspitze wird zu einer Funktion.
 
-Funktionen und die Klassen, in denen diese liegen, benötigen Namen. Uns ist es ganz wichtig immer wieder zu betonen, dass die Namen im Quellcode mit den Namen im Entwurf übereinstimmen müssen. Nur dann kann der Entwurf als Landkarte für den Quellcode dienen. Die Diagramm, welche die Lösung widerspiegeln, können dann als Orientierung im Code genutzt werden. Das geht allerdings nur dann flüssig, wenn alle Namen übereinstimmen. Wird in der Implementation von den Namen des Entwurfs abgewichen, ist eine Übersetzung erfoderlich. Stelle dir eine Wanderkarte vor, in denen die Wanderwege leicht abweichend von den Bezeichnungen auf den Hinweisschildern des realen Wanderwegs abweichen. Nicht dass die Karte gar keinen Wert hätte, aber die Orientierung ist dann nicht leicht und flüssig sondern von Übersetzungen und vermutlich Fehlern geprägt.
+Funktionen und die Klassen, in denen diese liegen, benötigen Namen. Uns ist es ganz wichtig immer wieder zu betonen, dass die Namen im Quellcode mit den Namen im Entwurf übereinstimmen müssen. Nur dann kann der Entwurf als Landkarte für den Quellcode dienen. Die Diagramme, welche die Lösung widerspiegeln, können dann als Orientierung im Code genutzt werden. Das geht allerdings nur dann flüssig, wenn alle Namen übereinstimmen. Wird in der Implementation von den Namen des Entwurfs abgewichen, ist eine Übersetzung erfoderlich. Stelle dir eine Wanderkarte vor, in denen die Namen der Wanderwege von den Bezeichnungen auf den Hinweisschildern des realen Wanderwegs abweichen. Nicht dass die Karte gar keinen Wert hätte, aber die Orientierung ist dann nicht leicht und flüssig, sondern von Übersetzungen und vermutlich Fehlern geprägt.
 
-
-The functions and classes need names. It is critical to use the names from the solution. If you do so you can use the solution as a map to the implementation and vice versa. Think about a change in the requirements. The diagrams that represent the solution can be used to give you an orientation where the changes need to be done. Maybe the changes are so extensive that you first need to change the solution, maybe they are so small that you only need to change the implementation. Anyway you may use the solution as a map into the code if and only if you use the names from the solution in your implementation.
-
-# How to implement inputs to a functional unit
-## Single path inputs
-How are data flows implemented? Lets look at the inputs first. If you have a simple functional unit *F* with an input dataflow that has *x* as a message this looks like the following in the solution:
+# Übersetzung von Inputs in Funktionseinheiten
+## Single Path Inputs
+Wie werden Datenflüsse implementiert? Wir zeigen hier zunächst die Inputs. Eine Funktion *F* mit einem Input *x* sieht im Entwurf der Lösung wie folgt aus:
 
 ![Single path input](https://raw.githubusercontent.com/ccdschool/flowdesignorg/master/images/implementation/input/singlepath/diagram1.png)
 
-An *x* is flowing into the functional unit *F*. This simple input flow is implemented as a function that is named after the functional unit:
+Es fließt ein *x* in die Funktionseinheit *F*. Dieser einfache Input Flow wird als Funktion implementiert. Sie trägt den Namen der Funktionseinheit, hier also *F*.
 
-<pre url="https://github.com/ccdschool/flowdesignorg/raw/master/source/csharp/implementation/implementation/input/singlepath/AsFunction.cs" range="7-9"></pre>
+´´´csharp
+  public void F(int x) {
+    // ...
+  }
+´´´
 
-Its even possible to implement the input data flow as a static function if no state is required:
+Es ist sogar möglich, den Input Flow als *statische* Funktion zu implementieren, wenn kein Zustand benötigt wird:
 
 <pre url="https://github.com/ccdschool/flowdesignorg/raw/master/source/csharp/implementation/implementation/input/singlepath/AsFunction.cs" range="15-17"></pre>
 
-The name of the function *F* corresponds with the name of the functional unit in the solution. The message *x* flowing into the functional unit is a parameter to the function and it is named after the message in the solution. I used *int* as the parameter type for *x*. The parameter type is not represented in the solution. This is for a good reason: the solution is much more abstract than the implementation. You have to decide which types you may use in the implementation for each given message.
+Der Name der Funktion *F* korrespondiert mit dem Namen der Funktionseinheit im Entwurf. Die Nachricht *x*, welche in die Funktionseinheit fließt, wird zu einem Paramter der Funktion. Der Parametername wird so gewählt, wie im entwurf bezeichnet, hier im Beispiel also *x*. In der gezeigten Übersetzung haben wir *int* als Typ gewählt. Der Typ ist im Entwurf nicht explizit angegeben. Das machen wir aus einem guten Grund so: der Entwurf ist abtrakter als die Implementation. Es sollen hier nicht zu viele Details vorweg genommen werden. Wenn es aus technischen Gründen relevant sein sollte, einen bestimmten Typ zu verwenden, kann dies im Entwurf augedrückt werden durch *x: int*. Andernfalls müssen die Entwickler beim Übergang vom Entwurf zur Implementation entscheiden, welche Typen verwendet werden.
 
-In C# each function has to be contained in a class. So there is one name in the implementation that is not present in the solution, the class name. It has to be chosen to match the problem domain of the software system. If you implement the solution with a team of developers you have to find the names for the classes before starting to implement. We see it as a good practice to annotate all functional units in the solution with the class name it corresponds to. The following example shows how we typically do that:
+In C# müssen Funktionen in Klassen liegen. Im Entwurf taucht der Klassenname jedoch zunächst nicht auf. Er soll so gewählt werden, dass er zur Problemdomäne passt. Sofern die Lösung durch ein Tream arbeitsteilig implementiert werden soll, muss sich das gesamte Team auf die Namen der Klassen verständigen, bevor mit der Implementation begonnen wird. Wir sehen es als gut Praxis an, die Namen der Klassen an den Funktionseinheiten zu annotieren. Folgendes Beispiel zeigt dies.
 
 ![Single path input with class name](https://raw.githubusercontent.com/ccdschool/flowdesignorg/master/images/implementation/input/singlepath/diagram2.png)
 
