@@ -13,11 +13,11 @@ Wie werden Datenflüsse implementiert? Wir zeigen hier zunächst die Inputs. Ein
 
 Es fließt ein *x* in die Funktionseinheit *F*. Dieser einfache Input Flow wird als Funktion implementiert. Sie trägt den Namen der Funktionseinheit, hier also *F*.
 
-´´´csharp
+```csharp
   public void F(int x) {
     // ...
   }
-´´´
+```
 
 Es ist sogar möglich, den Input Flow als *statische* Funktion zu implementieren, wenn kein Zustand benötigt wird:
 
